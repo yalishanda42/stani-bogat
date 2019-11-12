@@ -20,13 +20,10 @@ public class XMLParserUtil {
 
     public XMLParserUtil(String xmlFilename) throws ParserConfigurationException, IOException, SAXException, XMLNotValidException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        factory.setValidating(true);
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document parsedDocument = builder.parse(new File(xmlFilename));
-        if (xmlDocumentIsValid(parsedDocument, xmlFilename)) {
-            setXmlDocument(parsedDocument);
-        } else {
-            throw new XMLNotValidException(xmlFilename);
-        }
+        setXmlDocument(parsedDocument);
     }
 
     private boolean xmlDocumentIsValid(Document document, String schemaFilename) {
@@ -59,7 +56,7 @@ public class XMLParserUtil {
         xmlDocument = newDocument;
     }
 
-    private static class XMLNotValidException extends Throwable {
+    private static class XMLNotValidException extends Exception {
         XMLNotValidException(String xmlFilename) {
             System.out.println(String.format("XML file '%s' not valid!", xmlFilename));
         }
