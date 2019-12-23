@@ -3,17 +3,24 @@ package sample.Models;
 import java.util.HashMap;
 
 public class QuestionContainer {
-    public HashMap<PriceCategory, Question> containerOfAllQuestions;
-    private static int numberOfAllQuestionsInContainer = 0;
+    private HashMap<PriceCategory, Question> containerOfAllQuestions;
     private static final QuestionContainer instanceOfQuestionContainer = new QuestionContainer();
 
     public void addQuestionToContainer(PriceCategory category, Question questionToAdd) {
         containerOfAllQuestions.putIfAbsent(category, questionToAdd);
-        numberOfAllQuestionsInContainer++;
+    }
+
+    public Question getQuestionFromContainerByPriceCategory(PriceCategory categoryOfNeededQuestion) {
+        Question questionToReturn = containerOfAllQuestions.get(categoryOfNeededQuestion);
+        return questionToReturn;
+    }
+
+    public HashMap<PriceCategory, Question> getContainerOfAllQuestions() {
+        return containerOfAllQuestions;
     }
 
     public int getNumberOfAllQuestionsInContainer() {
-        return numberOfAllQuestionsInContainer;
+        return containerOfAllQuestions.size();
     }
 
     private QuestionContainer() {
