@@ -15,7 +15,7 @@ public enum PriceCategory {
     LVL_10000(10_000),
     LVL_15000(15_000),
     LVL_20000(20_000),
-    LVL_100000(10_0000);
+    LVL_100000(100_000);
 
     PriceCategory(int price) {
     }
