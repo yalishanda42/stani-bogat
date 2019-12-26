@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.Map;
 
 public class QuestionsContainer {
-    private Map<PriceCategory, List<Question>> containerOfAllQuestions;
+    private Map<PrizeCategory, List<Question>> containerOfAllQuestions;
 
-    public void addQuestionToContainer(PriceCategory category, Question questionToAdd) {
+    public void addQuestionToContainer(PrizeCategory category, Question questionToAdd) {
         containerOfAllQuestions.putIfAbsent(category, new ArrayList<>());
         containerOfAllQuestions.get(category).add(questionToAdd);
     }
 
-    public Map<PriceCategory, List<Question>> getContainerOfAllQuestions() {
+    public Map<PrizeCategory, List<Question>> getContainerOfAllQuestions() {
         return containerOfAllQuestions;
     }
 

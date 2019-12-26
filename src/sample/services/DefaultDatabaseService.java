@@ -7,7 +7,7 @@ import org.xml.sax.SAXException;
 import sample.services.interfaces.DatabaseService;
 import sample.util.XMLParserUtil;
 import sample.models.Answer;
-import sample.models.PriceCategory;
+import sample.models.PrizeCategory;
 import sample.models.Question;
 import sample.models.QuestionsContainer;
 
@@ -34,8 +34,8 @@ public class DefaultDatabaseService implements DatabaseService {
         NodeList difficultyNodes = document.getElementsByTagName("difficulty");
         for (int i = 0; i < difficultyNodes.getLength(); i++) {
             Node node = difficultyNodes.item(i);
-            String priceString = node.getAttributes().getNamedItem("price").getNodeValue();
-            PriceCategory price = PriceCategory.valueOf("LVL_" + priceString);
+            String prizeString = node.getAttributes().getNamedItem("prize").getNodeValue();
+            PrizeCategory prize = PrizeCategory.valueOf("LVL_" + prizeString);
 
             NodeList questionNodes = node.getChildNodes();
             for (int j = 0; j < questionNodes.getLength(); j++) {
@@ -58,8 +58,8 @@ public class DefaultDatabaseService implements DatabaseService {
                         answers.add(new Answer(answerText, isCorrect));
                     }
 
-                    Question question = new Question(questionText, price, answers);
-                    container.addQuestionToContainer(price, question);
+                    Question question = new Question(questionText, prize, answers);
+                    container.addQuestionToContainer(prize, question);
                 }
             }
         }

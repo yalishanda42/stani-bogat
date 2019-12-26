@@ -4,10 +4,10 @@ import java.util.List;
 
 public class Question {
     private String questionText;
-    private PriceCategory questionPrice;
+    private PrizeCategory questionPrice;
     private List<Answer> questionAnswers;
 
-    public Question(String text, PriceCategory price, List<Answer> answers){
+    public Question(String text, PrizeCategory price, List<Answer> answers){
         this.questionText = text;
         this.questionPrice = price;
         this.questionAnswers = answers;
@@ -17,7 +17,7 @@ public class Question {
         return this.questionText;
     }
 
-    public PriceCategory getQuestionPrice(){
+    public PrizeCategory getQuestionPrice(){
         return this.questionPrice;
     }
 

@@ -1,6 +1,6 @@
 package sample.models;
 
-public enum PriceCategory {
+public enum PrizeCategory {
     LVL_50(50),
     LVL_100(100),
     LVL_200(200),
@@ -19,11 +19,11 @@ public enum PriceCategory {
 
     private final int price;
 
-    PriceCategory(int price) {
+    PrizeCategory(int price) {
         this.price = price;
     }
 
-    public Integer getPrice() {
+    public Integer getPrize() {
         return price;
     }
 }

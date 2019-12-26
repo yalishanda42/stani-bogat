@@ -2,7 +2,7 @@ package sample.services;
 
 import org.xml.sax.SAXException;
 import sample.models.Answer;
-import sample.models.PriceCategory;
+import sample.models.PrizeCategory;
 import sample.models.Question;
 import sample.services.interfaces.DatabaseService;
 import sample.services.interfaces.GameService;
@@ -17,13 +17,13 @@ public class DefaultGameService implements GameService {
 
     private final DatabaseService databaseService;
 
-    private Map<PriceCategory, Question> currentGameQuestions;
-    private List<PriceCategory> categoriesInOrderFromStartToEnd;
-    private PriceCategory currentQuestionCategory;
-    private Integer currentPriceCategoryIndexInList;
+    private Map<PrizeCategory, Question> currentGameQuestions;
+    private List<PrizeCategory> categoriesInOrderFromStartToEnd;
+    private PrizeCategory currentQuestionCategory;
+    private Integer currentPrizeCategoryIndexInList;
     private List<Answer> currentAnswersRandomlyShuffled;
-    private PriceCategory lastGuaranteedPrice;
-    private Integer priceWonOnGameOver;
+    private PrizeCategory lastGuaranteedPrize;
+    private Integer prizeWonOnGameOver;
 
     public DefaultGameService() throws ParserConfigurationException, SAXException, IOException {
         databaseService = new DefaultDatabaseService();
@@ -31,12 +31,12 @@ public class DefaultGameService implements GameService {
 
     @Override
     public void startNewGame() {
-        Map<PriceCategory, List<Question>> allQuestions = databaseService
+        Map<PrizeCategory, List<Question>> allQuestions = databaseService
                 .fetchAllQuestionsFromDatabase()
                 .getContainerOfAllQuestions();
 
         currentGameQuestions = new HashMap<>();
-        for (Map.Entry<PriceCategory, List<Question>> entry : allQuestions.entrySet()) {
+        for (Map.Entry<PrizeCategory, List<Question>> entry : allQuestions.entrySet()) {
             List<Question> questions = entry.getValue();
             int randomIndex = ThreadLocalRandom.current().nextInt(questions.size());
             Question chosenQuestion = questions.get(randomIndex);
@@ -47,7 +47,7 @@ public class DefaultGameService implements GameService {
         categoriesInOrderFromStartToEnd = new ArrayList<>(allQuestions.keySet());
         Collections.sort(categoriesInOrderFromStartToEnd);
         if (!categoriesInOrderFromStartToEnd.isEmpty()) {
-            currentPriceCategoryIndexInList = -1;
+            currentPrizeCategoryIndexInList = -1;
             advanceToNextQuestion();
         }
     }
@@ -79,11 +79,11 @@ public class DefaultGameService implements GameService {
     }
 
     @Override
-    public String getCurrentCategoryPriceText() {
+    public String getCurrentCategoryPrizeText() {
         if (currentQuestionCategory == null) {
             return null;
         }
-        return currentQuestionCategory.getPrice().toString();
+        return currentQuestionCategory.getPrize().toString();
     }
 
     @Override
@@ -95,7 +95,7 @@ public class DefaultGameService implements GameService {
     }
 
     @Override
-    public List<String> getCurrentAnswersInOrder() {
+    public List<String> getCurrentAnswers() {
         if (currentQuestionCategory == null) {
             return null;
         }
@@ -103,8 +103,8 @@ public class DefaultGameService implements GameService {
     }
 
     @Override
-    public int getPriceWon() {
-        return priceWonOnGameOver == null ? 0 : priceWonOnGameOver;
+    public int getPrizeWon() {
+        return prizeWonOnGameOver == null ? 0 : prizeWonOnGameOver;
     }
 
     // Helpers
@@ -120,36 +120,36 @@ public class DefaultGameService implements GameService {
     }
 
     private boolean advanceToNextQuestion() {
-        currentPriceCategoryIndexInList++;
-        if (currentPriceCategoryIndexInList == categoriesInOrderFromStartToEnd.size()) {
+        currentPrizeCategoryIndexInList++;
+        if (currentPrizeCategoryIndexInList == categoriesInOrderFromStartToEnd.size()) {
             gameOver(true);
             return true;
         }
-        currentQuestionCategory = categoriesInOrderFromStartToEnd.get(currentPriceCategoryIndexInList);
+        currentQuestionCategory = categoriesInOrderFromStartToEnd.get(currentPrizeCategoryIndexInList);
         shuffleCurrentQuestionAnswers();
 
-        if ((currentPriceCategoryIndexInList + 1) % 5 == 0) {
-            lastGuaranteedPrice = currentQuestionCategory;
+        if ((currentPrizeCategoryIndexInList + 1) % 5 == 0) {
+            lastGuaranteedPrize = currentQuestionCategory;
         }
 
         return false;
     }
 
-    private void gameOver(boolean winCurrentPrice) {
-        if (winCurrentPrice) {
-            int priceWonIndex = currentPriceCategoryIndexInList - 1;
-            if (priceWonIndex < 0) {
+    private void gameOver(boolean winCurrentPrize) {
+        if (winCurrentPrize) {
+            int prizeWonIndex = currentPrizeCategoryIndexInList - 1;
+            if (prizeWonIndex < 0) {
                 currentQuestionCategory = null;
             } else {
-                currentQuestionCategory = categoriesInOrderFromStartToEnd.get(priceWonIndex);
+                currentQuestionCategory = categoriesInOrderFromStartToEnd.get(prizeWonIndex);
             }
-            priceWonOnGameOver = currentQuestionCategory == null ? 0 : currentQuestionCategory.getPrice();
+            prizeWonOnGameOver = currentQuestionCategory == null ? 0 : currentQuestionCategory.getPrize();
         } else {
-            priceWonOnGameOver = lastGuaranteedPrice == null ? 0 : lastGuaranteedPrice.getPrice();
+            prizeWonOnGameOver = lastGuaranteedPrize == null ? 0 : lastGuaranteedPrize.getPrize();
         }
 
         currentQuestionCategory = null;
         currentAnswersRandomlyShuffled = null;
-        lastGuaranteedPrice = null;
+        lastGuaranteedPrize = null;
     }
 }
