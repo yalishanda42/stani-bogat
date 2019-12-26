@@ -7,8 +7,8 @@ public interface GameService {
     /* ====================================== ACTIONS ==================================================== */
 
     /**
-     * Loads and configures a new game of "Stani Bogat" with questions selected at random.
-     * Sets the current question to the first one.
+     * Load and configure a new game of "Stani Bogat" with questions selected at random.
+     * Set the current question to the first one.
      */
     void startNewGame();
 
