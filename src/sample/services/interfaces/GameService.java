@@ -16,7 +16,7 @@ public interface GameService {
      * Pick an answer to the current question.
      * If right - advance to the next question (or end the game if this was the last one).
      * If wrong - end the game.
-     * @param answer The string with the answer picked (as returned by getCurrentAnswersInOrder())
+     * @param answer The string with the answer picked (as returned by getCurrentAnswers())
      * @return Boolean, indicating whether the game has ended after the answer has been picked
      * @throws NullPointerException when the supplied answer string does not match any of the current ones'.
      */
