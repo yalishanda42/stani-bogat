@@ -1,11 +1,15 @@
 package sample.services.interfaces;
 
+import java.util.List;
+
 public interface GameService {
     void startNewGame();
-    void pickAnswer(/*TODO: decide the type of parameters*/);
+    boolean pickAnswerAndCheckIfGameIsOver(String answer);
     void giveUp();
-    void advanceToNextQuestion();
-    /*TODO: decide the correct return type*/ void getGameState();
+    String getCurrentCategoryPriceText();
+    String getCurrentQuestionText();
+    List<String> getCurrentAnswersInOrder();
+    int getPriceWon();
 
     // TODO: add 3 jokers functionality
 }

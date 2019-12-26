@@ -2,16 +2,18 @@ package sample.models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class QuestionsContainer {
-    private HashMap<PriceCategory, ArrayList<Question>> containerOfAllQuestions;
+    private Map<PriceCategory, List<Question>> containerOfAllQuestions;
 
     public void addQuestionToContainer(PriceCategory category, Question questionToAdd) {
         containerOfAllQuestions.putIfAbsent(category, new ArrayList<>());
         containerOfAllQuestions.get(category).add(questionToAdd);
     }
 
-    public HashMap<PriceCategory, ArrayList<Question>> getContainerOfAllQuestions() {
+    public Map<PriceCategory, List<Question>> getContainerOfAllQuestions() {
         return containerOfAllQuestions;
     }
 

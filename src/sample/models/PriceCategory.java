@@ -17,6 +17,13 @@ public enum PriceCategory {
     LVL_20000(20_000),
     LVL_100000(100_000);
 
+    private final int price;
+
     PriceCategory(int price) {
+        this.price = price;
+    }
+
+    public Integer getPrice() {
+        return price;
     }
 }
