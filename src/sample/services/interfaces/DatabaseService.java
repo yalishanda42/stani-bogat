@@ -1,5 +1,7 @@
 package sample.services.interfaces;
 
+import sample.models.QuestionsContainer;
+
 public interface DatabaseService {
-    void fetchFromDatabaseIntoQuestionsContainer();
+    QuestionsContainer fetchAllQuestionsFromDatabase();
 }

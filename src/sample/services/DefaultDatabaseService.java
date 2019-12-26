@@ -9,7 +9,7 @@ import sample.util.XMLParserUtil;
 import sample.models.Answer;
 import sample.models.PriceCategory;
 import sample.models.Question;
-import sample.models.QuestionContainer;
+import sample.models.QuestionsContainer;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
@@ -26,8 +26,9 @@ public class DefaultDatabaseService implements DatabaseService {
         parser = new XMLParserUtil(new File(XML_FILENAME));
     }
 
-    public void fetchFromDatabaseIntoQuestionsContainer() {
-        QuestionContainer containerInstance = QuestionContainer.getInstanceOfQuestionContainer();
+    @Override
+    public QuestionsContainer fetchAllQuestionsFromDatabase() {
+        QuestionsContainer container = new QuestionsContainer();
         Document document = parser.getXmlDocument();
 
         NodeList difficultyNodes = document.getElementsByTagName("difficulty");
@@ -58,9 +59,11 @@ public class DefaultDatabaseService implements DatabaseService {
                     }
 
                     Question question = new Question(questionText, price, answers);
-                    containerInstance.addQuestionToContainer(price, question);
+                    container.addQuestionToContainer(price, question);
                 }
             }
         }
+
+        return container;
     }
 }
