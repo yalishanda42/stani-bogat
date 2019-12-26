@@ -1,4 +1,4 @@
-package sample.Models;
+package sample.models;
 
 public class Answer {
     private String answer;

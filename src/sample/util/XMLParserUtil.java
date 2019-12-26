@@ -1,4 +1,4 @@
-package sample;
+package sample.util;
 
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
@@ -13,7 +13,7 @@ public class XMLParserUtil {
 
     private Document xmlDocument;
 
-    XMLParserUtil(File xmlFile) throws ParserConfigurationException, IOException, SAXException {
+    public XMLParserUtil(File xmlFile) throws ParserConfigurationException, IOException, SAXException {
         if (xmlFile == null) {
             throw new NullPointerException("XML file should not be null");
         }

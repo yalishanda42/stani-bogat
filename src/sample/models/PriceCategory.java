@@ -1,4 +1,4 @@
-package sample.Models;
+package sample.models;
 
 public enum PriceCategory {
     LVL_50(50),

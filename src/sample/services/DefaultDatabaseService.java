@@ -1,30 +1,32 @@
-package sample;
+package sample.services;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-import sample.Models.Answer;
-import sample.Models.PriceCategory;
-import sample.Models.Question;
-import sample.Models.QuestionContainer;
+import sample.services.interfaces.DatabaseService;
+import sample.util.XMLParserUtil;
+import sample.models.Answer;
+import sample.models.PriceCategory;
+import sample.models.Question;
+import sample.models.QuestionContainer;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class DatabaseService {
+public class DefaultDatabaseService implements DatabaseService {
 
     private static final String XML_FILENAME = "src/sample/database.xml";
 
     private final XMLParserUtil parser;
 
-    DatabaseService() throws IOException, SAXException, ParserConfigurationException {
+    DefaultDatabaseService() throws IOException, SAXException, ParserConfigurationException {
         parser = new XMLParserUtil(new File(XML_FILENAME));
     }
 
-    void fetchFromDatabaseIntoQuestionsContainer() {
+    public void fetchFromDatabaseIntoQuestionsContainer() {
         QuestionContainer containerInstance = QuestionContainer.getInstanceOfQuestionContainer();
         Document document = parser.getXmlDocument();
 

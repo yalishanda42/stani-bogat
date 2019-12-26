@@ -4,7 +4,7 @@
     <module name="Stani Bogat" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="sample.*" />
+        <option name="PATTERN" value="sample.services.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>
