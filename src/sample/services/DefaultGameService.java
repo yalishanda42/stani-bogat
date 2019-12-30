@@ -128,8 +128,9 @@ public class DefaultGameService implements GameService {
         currentQuestionCategory = categoriesInOrderFromStartToEnd.get(currentPrizeCategoryIndexInList);
         shuffleCurrentQuestionAnswers();
 
-        if ((currentPrizeCategoryIndexInList + 1) % 5 == 0) {
-            lastGuaranteedPrize = currentQuestionCategory;
+        if (currentPrizeCategoryIndexInList != 0 && currentPrizeCategoryIndexInList % 5 == 0) {
+            // every five questions the player hits a checkpoint - a guaranteed prize is won if they answer incorrectly
+            lastGuaranteedPrize = categoriesInOrderFromStartToEnd.get(currentPrizeCategoryIndexInList - 1);
         }
 
         return false;
