@@ -12,27 +12,197 @@
 
 <questionsdatabase>
     <difficulty prize="50">
-        <question text="Как се казва тази игра?">
-            <correctanswer>Стани Богат</correctanswer>
-            <wronganswer>Имплементирай Трудно 3</wronganswer>
-            <wronganswer>Трима мъже и половин код</wronganswer>
-            <wronganswer>Стани Космат</wronganswer>
+        <question text="В коя приказка няма замесен принц в главната роля и развръзката?">
+            <correctanswer>Трите прасенца</correctanswer>
+            <wronganswer>Снежанка</wronganswer>
+            <wronganswer>Спящата красавица</wronganswer>
+            <wronganswer>Пепеляшка</wronganswer>
         </question>
     </difficulty>
+
     <difficulty prize="100">
-        <question text="Кой е на Видин кода?">
-            <correctanswer>094</correctanswer>
-            <wronganswer>280</wronganswer>
-            <wronganswer>413</wronganswer>
-            <wronganswer>098</wronganswer>
+        <question text="Кой хранителен продукт представлява цяло парче месо, изсушено и обработено по повърхността без раздробяване?">
+            <correctanswer>Пастърма</correctanswer>
+            <wronganswer>Кюфте</wronganswer>
+            <wronganswer>Пача</wronganswer>
+            <wronganswer>Наденица</wronganswer>
         </question>
     </difficulty>
+
+    <difficulty prize="200">
+        <question text="Действието на кое причинява бързо стареене на кожата, увреждане на тъканите и бръчки?">
+            <correctanswer>Свободните радикали</correctanswer>
+            <wronganswer>Тесните социалисти</wronganswer>
+            <wronganswer>Крайните националисти</wronganswer>
+            <wronganswer>Екологичните активисти</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="300">
+        <question text="Какво представлява модният аксесоар борсалино?">
+            <correctanswer>Шапка</correctanswer>
+            <wronganswer>Шлифер</wronganswer>
+            <wronganswer>Пистолет</wronganswer>
+            <wronganswer>Малка кожена чанта</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="500">
+        <question text="В Париж го наричат 'пазар на бълхите'. Как му казваме ние?">
+            <correctanswer>Битак</correctanswer>
+            <wronganswer>Мушморок</wronganswer>
+            <wronganswer>Таралясник</wronganswer>
+            <wronganswer>Будала</wronganswer>
+        </question>
+        <question text="Колко файла с размер 400МБ можем да качим на външен харддиск от 500ГБ, ако знаем, че 1ГБ = 1000МБ?">
+            <correctanswer>1250</correctanswer>
+            <wronganswer>725</wronganswer>
+            <wronganswer>1815</wronganswer>
+            <wronganswer>2050</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="700">
+        <question text="Коя японска фраза означава буквално 'десет хиляди години' и може да се преведе с пожеланието 'за много години'?">
+            <correctanswer>Банзай</correctanswer>
+            <wronganswer>Сайонара</wronganswer>
+            <wronganswer>Аригато</wronganswer>
+            <wronganswer>Коничуа</wronganswer>
+        </question>
+        <question text="В историята на кое изкуство е легенда Рудолф Нуреев?">
+            <correctanswer>Балет</correctanswer>
+            <wronganswer>Калиграфия</wronganswer>
+            <wronganswer>Абстрактна живопис</wronganswer>
+            <wronganswer>Реторика</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="1000">
+        <question text="Непоносимост към какво представлява 'модерното'' напоследък заболяване цьолиакия?">
+            <correctanswer>Глутен</correctanswer>
+            <wronganswer>Ядки</wronganswer>
+            <wronganswer>Водорасли</wronganswer>
+            <wronganswer>Млечни продукти</wronganswer>
+        </question>
+        <question text="Според данните на НСИ за 2018г. приблизително колко процента от новородените деца са родени извън брак?">
+            <correctanswer>60%</correctanswer>
+            <wronganswer>25%</wronganswer>
+            <wronganswer>35%</wronganswer>
+            <wronganswer>45%</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="1500">
+        <question text="Производството на кое беше обявено за толкова вредно за климата, колкото и добивът на петрол?">
+            <correctanswer>Месо</correctanswer>
+            <wronganswer>Хладилници</wronganswer>
+            <wronganswer>Смартфони</wronganswer>
+            <wronganswer>Шоколадови продукти</wronganswer>
+        </question>
+        <question text="През юни тази година за първи път американски дизайнер бе посветен в рицарство в Бъкингамския дворец. Кой?">
+            <correctanswer>Ралф Лорън</correctanswer>
+            <wronganswer>Александър Маккуин</wronganswer>
+            <wronganswer>Калвин Клайн</wronganswer>
+            <wronganswer>Джон Галиано</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="2000">
+        <question text="Джордж е последен представител на своя подвид и умира на галапагоския о. Пинта през 2012г. Какво животно е той?">
+            <correctanswer>Гигантска костенурка</correctanswer>
+            <wronganswer>Носорог-джудже</wronganswer>
+            <wronganswer>Нелетяща птица</wronganswer>
+            <wronganswer>Тесноноса маймуна</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="2500">
+        <question text="Чия съпруга е Смарайда, която е интернирана в Дряново след 1944г. и прави кукли, за да издържа семейството си?">
+            <correctanswer>На Атанас Буров</correctanswer>
+            <wronganswer>На Евлоги Георгиев</wronganswer>
+            <wronganswer>На Богдан Филов</wronganswer>
+            <wronganswer>На проф. Балабанов</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="5000">
+        <question text="Епидемия от какво избухва през 1962г. в Танганайка, за чийто причинител учените спорят и до днес?">
+            <correctanswer>Смях</correctanswer>
+            <wronganswer>Прозяване</wronganswer>
+            <wronganswer>Оригване</wronganswer>
+            <wronganswer>Кихане</wronganswer>
+        </question>
+        <question text="Къде е роден българският княз Александър Батенберг?">
+            <correctanswer>Верона</correctanswer>
+            <wronganswer>Виена</wronganswer>
+            <wronganswer>Лион</wronganswer>
+            <wronganswer>Санкт Петербург</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="10000">
+        <question text="В Декларацията за независимост на САЩ от 1776г. 19 пъти е използвано местоимението 'той'. Кой е 'той'?">
+            <correctanswer>Крал Джордж 3-ти</correctanswer>
+            <wronganswer>Бог</wronganswer>
+            <wronganswer>Човекът</wronganswer>
+            <wronganswer>Джордж Вашингтон</wronganswer>
+        </question>
+        <question text="За кой европейски владетел за смята, че е въвел съвременната родилна поза?">
+            <correctanswer>Луи 14-ти</correctanswer>
+            <wronganswer>Карл Велики</wronganswer>
+            <wronganswer>Елизабет 1-ва</wronganswer>
+            <wronganswer>Виктория</wronganswer>
+        </question>
+        <question text="Кое дърво живее край устия на реки и е единственото, издържащо корените му да са потопени в солена вода?">
+            <correctanswer>Мангрово дърво</correctanswer>
+            <wronganswer>Желязно дърво</wronganswer>
+            <wronganswer>Драконово дърво</wronganswer>
+            <wronganswer>Лаврово дърво</wronganswer>
+        </question>
+        <question text="Паметник на кой руснак, издал декрет за независимостта на Финландия, има и до днес в Хелзинки?">
+            <correctanswer>Владимир Ленин</correctanswer>
+            <wronganswer>Иван Грозни</wronganswer>
+            <wronganswer>Петър Велики</wronganswer>
+            <wronganswer>Александър Суворов</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="15000">
+        <question text="Колко американски президенти не доживяват края на мандата си?">
+            <correctanswer>8</correctanswer>
+            <wronganswer>2</wronganswer>
+            <wronganswer>4</wronganswer>
+            <wronganswer>6</wronganswer>
+        </question>
+        <question text="Благодарение на кое свое изобретение американската компания 3М става известна и се разраства?">
+            <correctanswer>Тиксо</correctanswer>
+            <wronganswer>Автоматични химикалки</wronganswer>
+            <wronganswer>Кламери</wronganswer>
+            <wronganswer>Телбод</wronganswer>
+        </question>
+    </difficulty>
+
+    <difficulty prize="20000">
+        <question text="Кой художник преработва знаменитата ренесансова творба 'Мона Лиза', създавайки 'Пневмония Лиза'?">
+            <correctanswer>Робърт Раушенберг</correctanswer>
+            <wronganswer>Анди Уорхол</wronganswer>
+            <wronganswer>Рой Лихтенщайн</wronganswer>
+            <wronganswer>Марсел Дюшан</wronganswer>
+        </question>
+    </difficulty>
+
     <difficulty prize="100000">
-        <question text="Как се нарича експерименталният музикален жанр, създаден в Добрич през 2015 година?">
-            <correctanswer>Landcore</correctanswer>
-            <wronganswer>Skycore</wronganswer>
-            <wronganswer>Crapcore</wronganswer>
-            <wronganswer>Baftacore</wronganswer>
+        <question text="Кой актьор участва като китарист в една песен от албума 'Be Here Now' (Бъди тук сега) на Oasis?">
+            <correctanswer>Джони Деп</correctanswer>
+            <wronganswer>Колин Фарел</wronganswer>
+            <wronganswer>Джон Кюсак</wronganswer>
+            <wronganswer>Брус Уилис</wronganswer>
+        </question>
+        <question text="Мусташ е 'боец' от Наполеоновата армия, спасил знамето на своя полк при Аустерпиц. Какво животно е той?">
+            <correctanswer>Черен пудел</correctanswer>
+            <wronganswer>Пощенски гълъб</wronganswer>
+            <wronganswer>Арабски кон</wronganswer>
+            <wronganswer>Опитомено шимпанзе</wronganswer>
         </question>
     </difficulty>
 </questionsdatabase>
