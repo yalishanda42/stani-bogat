@@ -72,6 +72,8 @@ public class GameController implements Initializable {
         answerBField.setEditable(false);
         answerCField.setEditable(false);
         answerDField.setEditable(false);
+        moneyField.setEditable(false);
+        questionNumberField.setEditable(false);
         gameService.startNewGame();
         loadNextQuestion();
     }
@@ -155,11 +157,11 @@ public class GameController implements Initializable {
 
         if (money.equals("100000")) {
             message = "Вие спечелихте голямата награда! Вашата печалба е " + money + ".";
-            buttonText = "Започнете нова игра";
         } else {
             message = "Вие загубихте! Вашата печалба е " + money + ".";
-            buttonText = "Започнете нова игра";
         }
+
+        buttonText = "Започнете нова игра";
 
         setStartScene(message, buttonText);
     }
