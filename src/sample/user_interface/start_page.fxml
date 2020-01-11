@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.user_interface.StartController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="466.0" prefWidth="575.0">
+         <children>
+            <Button fx:id="infoButton" layoutX="185.0" layoutY="381.0" mnemonicParsing="false" onAction="#setGameScene" prefHeight="44.0" prefWidth="206.0" text="Започнете игра" />
+            <TextArea fx:id="infoField" layoutX="54.0" layoutY="287.0" prefHeight="73.0" prefWidth="469.0" text="        &quot;Стани богат&quot; е една от най-популярните игри в света. Играта &#10;включва 15 въпроса, покриващи разбообразни теми, и 2 сигурни &#10;суми при достигане на 500 и 2500 лв. " />
+            <ImageView fitHeight="256.0" fitWidth="391.0" layoutX="93.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/djaro.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+    </children>
+</GridPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.user_interface.GameController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="466.0" prefWidth="575.0">
+         <children>
+            <Button fx:id="buttonA" layoutX="44.0" layoutY="320.0" mnemonicParsing="false" onAction="#selectAnswerA" prefHeight="43.0" prefWidth="45.0" text="A" />
+            <TextArea fx:id="questionField" layoutX="44.0" layoutY="233.0" prefHeight="75.0" prefWidth="486.0" />
+            <Button fx:id="buttonB" layoutX="310.0" layoutY="320.0" mnemonicParsing="false" onAction="#selectAnswerB" prefHeight="43.0" prefWidth="45.0" text="B" />
+            <ImageView fitHeight="212.0" fitWidth="337.0" layoutX="124.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/djaro.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="answerAField" layoutX="89.0" layoutY="320.0" prefHeight="43.0" prefWidth="175.0" />
+            <TextField fx:id="answerBField" layoutX="355.0" layoutY="320.0" prefHeight="43.0" prefWidth="175.0" />
+            <TextField fx:id="answerCField" layoutX="89.0" layoutY="380.0" prefHeight="43.0" prefWidth="175.0" />
+            <TextField fx:id="answerDField" layoutX="355.0" layoutY="380.0" prefHeight="43.0" prefWidth="175.0" />
+            <Button fx:id="buttonC" layoutX="44.0" layoutY="380.0" mnemonicParsing="false" onAction="#selectAnswerC" prefHeight="43.0" prefWidth="45.0" text="C" />
+            <Button fx:id="buttonD" layoutX="310.0" layoutY="380.0" mnemonicParsing="false" onAction="#selectAnswerD" prefHeight="43.0" prefWidth="45.0" text="D" />
+            <TextField fx:id="moneyField" layoutX="23.0" layoutY="189.0" prefHeight="34.0" prefWidth="76.0" />
+            <Label layoutX="20.0" layoutY="161.0" text="Текуща сума" />
+            <TextField fx:id="questionNumberField" layoutX="481.0" layoutY="189.0" prefHeight="34.0" prefWidth="76.0" />
+            <Label layoutX="495.0" layoutY="161.0" text="Въпрос" />
+            <Button layoutX="391.0" layoutY="426.0" mnemonicParsing="false" onAction="#giveUp" prefHeight="26.0" prefWidth="139.0" text="Вземи си парите" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
