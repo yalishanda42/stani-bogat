@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class DefaultDatabaseService implements DatabaseService {
 
-    private static final String XML_FILENAME = "src/sample/database.xml";
+    private static final String XML_FILENAME = "src/sample/resources/database.xml";
 
     private final XMLParserUtil parser;
 

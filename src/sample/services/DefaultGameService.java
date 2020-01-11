@@ -1,6 +1,7 @@
 package sample.services;
 
 import org.xml.sax.SAXException;
+import sample.exceptions.StartingGameException;
 import sample.models.Answer;
 import sample.models.PrizeCategory;
 import sample.models.Question;
@@ -25,8 +26,12 @@ public class DefaultGameService implements GameService {
     private PrizeCategory lastGuaranteedPrize;
     private Integer prizeWonOnGameOver;
 
-    public DefaultGameService() throws ParserConfigurationException, SAXException, IOException {
-        databaseService = new DefaultDatabaseService();
+    public DefaultGameService() throws StartingGameException {
+        try {
+            databaseService = new DefaultDatabaseService();
+        } catch (Exception exc) {
+            throw new StartingGameException();
+        }
     }
 
     @Override
