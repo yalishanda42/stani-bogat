@@ -18,6 +18,13 @@
             <wronganswer>Спящата красавица</wronganswer>
             <wronganswer>Пепеляшка</wronganswer>
         </question>
+
+        <question text="Коя ценност предтавлява разплащателно средство, наричано с жаргонната дума 'кинти'?">
+            <correctanswer>Пари в обращение</correctanswer>
+            <wronganswer>Златни кюлчета</wronganswer>
+            <wronganswer>Необработени диаманти</wronganswer>
+            <wronganswer>Породисти крави</wronganswer>
+        </question>
     </difficulty>
 
     <difficulty prize="100">
@@ -26,6 +33,13 @@
             <wronganswer>Кюфте</wronganswer>
             <wronganswer>Пача</wronganswer>
             <wronganswer>Наденица</wronganswer>
+        </question>
+
+        <question text="В коя част от главата бръснарят може да оформи 'катинарче'?">
+            <correctanswer>Около устата и брадата</correctanswer>
+            <wronganswer>Върху бакенбардите</wronganswer>
+            <wronganswer>По теменната област</wronganswer>
+            <wronganswer>Върху веждите</wronganswer>
         </question>
     </difficulty>
 
@@ -36,6 +50,13 @@
             <wronganswer>Крайните националисти</wronganswer>
             <wronganswer>Екологичните активисти</wronganswer>
         </question>
+
+        <question text="Кой от уредите представлява дъска с 4 колела за пързаляне?">
+            <correctanswer>Лонгборд</correctanswer>
+            <wronganswer>Моноцикъл</wronganswer>
+            <wronganswer>Ролер</wronganswer>
+            <wronganswer>Велоаргометър</wronganswer>
+        </question>
     </difficulty>
 
     <difficulty prize="300">
@@ -44,6 +65,13 @@
             <wronganswer>Шлифер</wronganswer>
             <wronganswer>Пистолет</wronganswer>
             <wronganswer>Малка кожена чанта</wronganswer>
+        </question>
+
+        <question text="Коя от думите означава доволство и блаженство?">
+            <correctanswer>Нега</correctanswer>
+            <wronganswer>Мараня</wronganswer>
+            <wronganswer>Гюдерия</wronganswer>
+            <wronganswer>Неволя</wronganswer>
         </question>
     </difficulty>
 
@@ -75,6 +103,12 @@
             <wronganswer>Абстрактна живопис</wronganswer>
             <wronganswer>Реторика</wronganswer>
         </question>
+        <question text="Кой клас животни се състои от разредите Опашати, Безопашати и Безкраки?">
+            <correctanswer>Земноводни</correctanswer>
+            <wronganswer>Висши ракообразни</wronganswer>
+            <wronganswer>Медузи</wronganswer>
+            <wronganswer>Морски краставици</wronganswer>
+        </question>
     </difficulty>
 
     <difficulty prize="1000">
@@ -89,6 +123,12 @@
             <wronganswer>25%</wronganswer>
             <wronganswer>35%</wronganswer>
             <wronganswer>45%</wronganswer>
+        </question>
+        <question text="Кой от албумите не е на 'Щурците', а на ФСБ?">
+            <correctanswer>"След десет години"</correctanswer>
+            <wronganswer>"Мускетарски марш"</wronganswer>
+            <wronganswer>"Вкусът на времето"</wronganswer>
+            <wronganswer>"20 години по-късно"</wronganswer>
         </question>
     </difficulty>
 
@@ -105,6 +145,12 @@
             <wronganswer>Калвин Клайн</wronganswer>
             <wronganswer>Джон Галиано</wronganswer>
         </question>
+        <question text="Какво е характерно за 'Дъгата на Струве', обект от списъка на световното наследство на ЮНЕСКО?">
+            <correctanswer>Преминава през 10 държави</correctanswer>
+            <wronganswer>Вижда се само през юли</wronganswer>
+            <wronganswer>Рисува се на ЛГБТ флагове</wronganswer>
+            <wronganswer>Намира се в Полша</wronganswer>
+        </question>
     </difficulty>
 
     <difficulty prize="2000">
@@ -114,6 +160,18 @@
             <wronganswer>Нелетяща птица</wronganswer>
             <wronganswer>Тесноноса маймуна</wronganswer>
         </question>
+        <question text="Какво подарява Чърчил на Сталин от името на крал Джордж 6-ти в Техеран през 1943г.?">
+            <correctanswer>Меч от Сталинград</correctanswer>
+            <wronganswer>Тухла от Ленинград</wronganswer>
+            <wronganswer>Паве от Вършава</wronganswer>
+            <wronganswer>Шрапнел от Лондон</wronganswer>
+        </question>
+        <question text="Кой създава и записва най-продавания до момента музикален албум в света?">
+            <correctanswer>Майкъл Джексън</correctanswer>
+            <wronganswer>Уитни Хюстън</wronganswer>
+            <wronganswer>Барбара Стрейзънд</wronganswer>
+            <wronganswer>AC/DC</wronganswer>
+        </question>
     </difficulty>
 
     <difficulty prize="2500">
@@ -122,6 +180,18 @@
             <wronganswer>На Евлоги Георгиев</wronganswer>
             <wronganswer>На Богдан Филов</wronganswer>
             <wronganswer>На проф. Балабанов</wronganswer>
+        </question>
+        <question text="Какво създава на младини италианецът Енеа Силвио Пиколомини, избран през 1458г. за папа с името Пий 2-ри?">
+            <correctanswer>Еротичен роман</correctanswer>
+            <wronganswer>Уред за мъчения</wronganswer>
+            <wronganswer>Чумен патоген</wronganswer>
+            <wronganswer>Синтетичен наркотик</wronganswer>
+        </question>
+        <question text="В кората на коя жлеза се произвеждат кортикостероидите?">
+            <correctanswer>Надбъбречната</correctanswer>
+            <wronganswer>Хипофизната</wronganswer>
+            <wronganswer>Щитовидната</wronganswer>
+            <wronganswer>Задстомашната</wronganswer>
         </question>
     </difficulty>
 
@@ -180,6 +250,12 @@
             <wronganswer>Кламери</wronganswer>
             <wronganswer>Телбод</wronganswer>
         </question>
+        <question text="С какво се е занимавал носителят на единствения почетен дървен 'Оскар' в историята - Едгар Берген?">
+            <correctanswer>Вентропология</correctanswer>
+            <wronganswer>Еквилибристика</wronganswer>
+            <wronganswer>Пантомима</wronganswer>
+            <wronganswer>Имитация на гласове</wronganswer>
+        </question>
     </difficulty>
 
     <difficulty prize="20000">
@@ -188,6 +264,18 @@
             <wronganswer>Анди Уорхол</wronganswer>
             <wronganswer>Рой Лихтенщайн</wronganswer>
             <wronganswer>Марсел Дюшан</wronganswer>
+        </question>
+        <question text="Какво правят с дървените пръчки състезателите в Световния шампионат по Пухопръчки?">
+            <correctanswer>Хвърлят ги в река</correctanswer>
+            <wronganswer>Рисуват с тях</wronganswer>
+            <wronganswer>Изработват лъкове</wronganswer>
+            <wronganswer>Изплитат кошници</wronganswer>
+        </question>
+        <question text="Заради изчисляването на хороскопа на коя личност е лежал в затвора великият учен Джироламо Кардано?">
+            <correctanswer>Исус Христос</correctanswer>
+            <wronganswer>Леонардо да Винчи</wronganswer>
+            <wronganswer>Своя собствен</wronganswer>
+            <wronganswer>Папа Григорий 13-ти</wronganswer>
         </question>
     </difficulty>
 
@@ -203,6 +291,18 @@
             <wronganswer>Пощенски гълъб</wronganswer>
             <wronganswer>Арабски кон</wronganswer>
             <wronganswer>Опитомено шимпанзе</wronganswer>
+        </question>
+        <question text="Кой е дизайнерът на обратната част (реверса) на монетите на единната европейска валута - еврото?">
+            <correctanswer>Люк Люикс</correctanswer>
+            <wronganswer>Роберт Калина</wronganswer>
+            <wronganswer>Мишел Писар</wronganswer>
+            <wronganswer>Жак Филип</wronganswer>
+        </question>
+        <question text="Кой от измислените герои има собствена звезда на 'Алеята на славата' в Холивуд?">
+            <correctanswer>Годзила</correctanswer>
+            <wronganswer>Кинг Конг</wronganswer>
+            <wronganswer>Граф Дракула</wronganswer>
+            <wronganswer>Шрек</wronganswer>
         </question>
     </difficulty>
 </questionsdatabase>
